@@ -1,5 +1,5 @@
 .container {
-  background: url(../images/hero-img.jpg) no-repeat center/cover;
+  background: url(./images/hero-img.jpg) no-repeat center/cover;
   width: 100%;
   margin: 0 auto;
   height: 100vh;
@@ -540,7 +540,7 @@ html {
 }
 
 .menu {
-  background: url(../images/menu.jpg) no-repeat center/cover;
+  background: url(./images/menu.jpg) no-repeat center/cover;
   width: 100%;
   height: 100vh;
   position: relative;
