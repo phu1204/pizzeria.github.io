@@ -1,0 +1,53 @@
+.footer {
+  padding: 70px 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #796737;
+  max-width: 100%;
+  flex-wrap: wrap;
+  
+  &-about{
+      width: 280px;
+      margin-right: 180px;
+  }
+
+  &-item:not(:last-child){
+      margin-right: 150px;
+  }
+  &-item{
+      line-height: 1.5;
+  }
+
+  &-desc{
+      color: white;
+      line-height: 1.5;
+  }
+
+  &-title{
+      margin-bottom: 35px;
+      font-size: 17px;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  @media screen and (max-width: 767px) {
+      padding: 0 0 0 10px;
+    //   gap: 10px;
+    &-title {
+        margin-bottom: 10px;
+    }
+    &-repon{
+        flex: 1 1 50%;
+        width: 100%;
+        padding: 10px;
+    }
+    &-about{
+        margin-right: 0;
+    }
+    &-item:not(:last-child){
+        margin-right: 0;
+    }
+  }
+  
+}

@@ -15,9 +15,9 @@ function toggleMenu(){
     });
     
 }
+
 toggleMenu();
 
-//scroll animation
 window.addEventListener('scroll', reveal);  
 function reveal(){
     var reveals = document.querySelectorAll(".reveal");
@@ -35,7 +35,6 @@ function reveal(){
     }
 }
 
-//backtop
 window.addEventListener('scroll', ontop);
 var ontop = document.querySelector(".ontop");
 function ontop(){

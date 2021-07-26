@@ -82,26 +82,16 @@ html{
 
 .ontop{
   position: fixed;
-  right: 60px;
+  right: 10px;
   z-index: 99;
-  bottom: 80px;
+  bottom: 100px;
   width: fit-content;
   background-color: #ffba00;
   border-radius: 100rem;
-  cursor: pointer;
   i{
-     padding: 18px;
-     font-size: 15px;
+     padding: 20px;
+     font-size: 20px;
      color: white;
   }
-  display: none;
-  animation: bottotop 0.4s linear;
 }
-
-@media screen and (max-width: 1023px) {
-  .ontop{
-    right: 30px;
-  }
-}
-
 

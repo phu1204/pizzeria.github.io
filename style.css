@@ -12,6 +12,7 @@ html {
 
 .wrapper {
   max-width: 100%;
+  position: relative;
 }
 
 .button {
@@ -70,6 +71,29 @@ html {
   transition: all 0.3s linear;
 }
 
+.ontop {
+  position: fixed;
+  right: 60px;
+  z-index: 99;
+  bottom: 80px;
+  width: fit-content;
+  background-color: #ffba00;
+  border-radius: 100rem;
+  cursor: pointer;
+  display: none;
+  animation: bottotop 0.4s linear;
+}
+.ontop i {
+  padding: 18px;
+  font-size: 15px;
+  color: white;
+}
+
+@media screen and (max-width: 1023px) {
+  .ontop {
+    right: 30px;
+  }
+}
 .header {
   display: flex;
   align-items: center;

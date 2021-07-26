@@ -35,7 +35,6 @@ function reveal(){
     }
 }
 
-//backtop
 window.addEventListener('scroll', ontop);
 var ontop = document.querySelector(".ontop");
 function ontop(){
