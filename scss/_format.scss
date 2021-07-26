@@ -1,0 +1,210 @@
+.format{
+    height: 100vh;
+    &-top{
+        height: 70%;
+        position: relative;
+        background-color: #242424;
+        max-width: 100%;
+    }
+
+    &-content{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translate(0,-50%);
+        color: #fff;
+        width: 900px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    &-content::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(10%,-50%);
+        width: 100%;
+        height: 200px;
+        background-color: #ffba00;
+        z-index: -1;
+    }
+
+
+    &-title{
+        font-size: 54px;
+        font-weight: 200;
+        position: absolute;
+        left: 10px;
+        transform: rotate(-90deg);
+    }
+
+    &-new{
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    &-info{
+        padding-left: 200px;
+        width: 820px;
+    }
+
+    &-item{
+        margin-top: 60px;
+        padding-left: 10px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    &-img{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+
+    &-bottom{
+        height: 30%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1240px;
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+   
+
+    &-column{
+        width: calc(33.33% - 135px);
+    }
+
+    &-head{
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffba00;
+    }
+
+
+    @media screen and (max-width: 1279px) {
+        &-content{
+            top: 20%;
+            left: 0;
+            transform: translate(-10%, -50%);
+        }
+
+        &-img{
+            transform: none;
+            top: 45%;
+        }
+        &-bottom{
+            
+        }
+
+        &-column{
+            width: calc(33.33% - 60px);
+        }
+
+        &-title{
+            font-size: 45px;
+        }
+        &-new{
+            font-size: 40px;
+        }
+
+        &-item{
+            font-size: 25px;
+            margin-top: 40px;
+        }
+
+        &-content::before{
+            height: 150px;
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 1023px) { 
+        &-content{
+            width: 90%;
+        }
+
+        &-content::before{
+            height: 120px;
+            width: 80%;
+        }
+
+        &-title{
+            font-size: 40px;
+        }
+        &-new{
+            font-size: 35px;
+        }
+
+        &-item{
+            font-size: 20px;
+            margin-top: 35px;
+        }
+        &-img{
+            width: 65%;
+        }
+        &-bottom{
+           display: grid;
+           justify-content: flex-start;
+           grid-auto-columns: 50%;
+           grid-auto-flow: column;
+           grid-gap: 3rem;
+           overflow: auto;
+           overflow-y: hidden;
+           scroll-snap-type: x mandatory;
+           scroll-snap-stop: always;
+           -ms-touch-action: manipulation;
+           touch-action: manipulation;
+           -webkit-overflow-scrolling: touch;
+           scroll-padding: 1rem;
+           grid-template-columns: unset;
+           &{
+            -webkit-scrollbar {
+             display: none;
+             width: 0;
+           }
+           & > *{
+             scroll-snap-align: start;
+           }    
+        }
+    }
+        &-column{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        
+        
+        &-title{
+            display: none;
+        }
+        &-content{
+            top: 30%;       
+        }
+        &-img{
+            transform: translateY(40%);
+        }
+        &-info{
+            padding-left: 40px;
+        }
+        &-bottom{
+            grid-auto-columns: 90%;
+            
+            grid-gap: 3rem;
+        }
+    }
+    
+    
+    
+
+}

@@ -1,0 +1,102 @@
+.class{
+    background: url(../images/class.jpg) no-repeat center/cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    padding: 80px 130px 140px 0;
+    color: white;
+    &-content{
+        display:flex;
+        flex-direction:column;
+        width: 530px;
+        margin-left: auto;
+    }
+    &-name{
+        margin-bottom: 80px;
+    }
+    &-caption{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: right;
+    }
+    &-body{
+        padding: 100px 60px 65px;
+        background-color: #ffba00;
+    }
+    &-heading{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &-desc{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 85px;
+    }
+
+    &-price{
+        width: fit-content;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-left: auto;
+        letter-spacing: 2px;
+        span{
+            font-weight: 600;
+        }
+    }
+    &-info:first-child{
+        margin-bottom: 15px;
+    }
+
+    &-body{
+        margin-bottom: 40px;
+    }
+
+    &-button{
+        padding: 50px 30px 20px;
+        background-color: #ffba00;
+        width: 85%;
+        margin-left: auto;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 1279px) {
+        height: 75vh;
+    }
+    
+    @media screen and (max-width: 767px) {
+        padding-right: 0;
+        height: 100vh;
+        &-content{
+            width: 100%;
+        }
+        &-name{
+            padding-right: 10px;
+        }
+        &-heading{
+            font-size: 28px;
+        }
+        &-body{
+            padding: 50px 35px;
+        }
+        &-button{
+            width: 60%;
+            padding-top: 30px;
+            font-size: 25px;
+        }
+        &-desc{
+            font-size: 25px;
+        }
+        &-price{
+            font-size: 25px;
+        }
+    }
+    
+}

@@ -1,0 +1,107 @@
+.intro{
+    background-color: #ffba00;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    &-content{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 75px;
+    }
+    &--grand{
+        animation: lefttoright 0.5s linear;
+    }
+    &--opening{
+        animation: righttoleft 0.5s linear;
+    }
+    &-name{
+        display: block;    
+        text-transform: uppercase;
+        font-size: 130px;
+        color: white;
+        letter-spacing: 10px;
+    }
+    &-name:first-child{
+        font-weight: 800;
+    }
+    &-name:last-child{
+        font-weight: 200;
+    }
+
+    &-button{
+        margin-top: 130px;
+        background-color: #ffba00;
+        animation: bottotop 0.5s linear;
+    }
+
+    @media screen and (max-width: 1279px) {
+        height: 150px;
+        &-content{
+            flex-direction: column;
+            transform: translateY(130px)
+        }
+        &-name {
+            font-size: 90px;
+            width: fit-content;
+        }
+
+        &-title {
+            width: 100%;
+        }
+
+        &-name:last-child{
+            margin-left: auto;
+        }
+
+        &-button{
+            margin-top: 200px;
+            
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        height: 120px;
+       &-name{
+           font-size: 60px;
+       }
+
+       &-button{
+           margin-top: 170px;
+           padding: 15px 30px;
+           font-size: 23px;
+       }
+
+       &-content{
+            transform: translateY(105px)
+       }
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 100px;
+       &-name{
+           font-size: 50px;
+           letter-spacing: 3px;
+       }
+
+       &-content{ 
+        transform: translateY(100px)
+       }
+
+       &-button{
+           padding: 15px 30px;
+           font-size: 23px;
+           margin-top: 170px;
+       }
+    }
+    
+
+}

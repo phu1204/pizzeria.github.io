@@ -1,0 +1,54 @@
+@keyframes lefttoright{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+@keyframes righttoleft{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+@keyframes bottotop{
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+@keyframes toptobot{
+    from{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 0;
+        transform: scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: scale(0);
+     }
+}
