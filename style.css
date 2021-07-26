@@ -792,7 +792,7 @@ html {
 }
 
 .class {
-  background: url(../images/class.jpg) no-repeat center/cover;
+  background: url(./images/class.jpg) no-repeat center/cover;
   width: 100%;
   margin: 0 auto;
   height: 100vh;
