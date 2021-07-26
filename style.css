@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .wrapper {
@@ -98,7 +99,19 @@ html {
   display: flex;
   align-items: center;
   padding-top: 30px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.3s linear;
+}
+.header.sticky {
+  padding: 5px 20px;
+  background-color: #ffba00;
+}
+.header.sticky a {
+  font-weight: 600;
 }
 .header-logo {
   padding: 20px 30px 20px 130px;
@@ -116,6 +129,23 @@ html {
 .header-item {
   display: inline-block;
   animation: toptobot 0.5s linear;
+  position: relative;
+}
+.header-item::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 4px;
+  background-color: #ffba00;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+.header-item:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 .header-item:not(:first-child) {
   margin-left: 80px;

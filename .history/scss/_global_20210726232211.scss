@@ -1,0 +1,108 @@
+.container{
+  background: url(./images/hero-img.jpg) no-repeat center/cover;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+
+html{
+  // scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wrapper{
+  max-width: 100%;
+  position: relative;
+  
+}
+
+.button{
+  padding: 20px 40px;
+  border: 4px solid #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+.text{
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 35px;
+  line-height: 1.5;
+  color: black;
+  font-weight: 400;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 1279px) {
+  .container {
+      
+      background-position: top;
+      height: 960px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    background-position: top;
+    height: 960px;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    background-size: auto 800px;
+    background-position: center;
+    height: 800px;
+    background-color: #242424;
+}
+}
+
+
+.reveal{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s linear;
+}
+
+.reveal.active{
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s linear;
+  // .gallery-title::before{
+  //     display: none;
+  // }
+}
+
+.ontop{
+  position: fixed;
+  right: 60px;
+  z-index: 99;
+  bottom: 80px;
+  width: fit-content;
+  background-color: #ffba00;
+  border-radius: 100rem;
+  cursor: pointer;
+  i{
+     padding: 18px;
+     font-size: 15px;
+     color: white;
+  }
+  display: none;
+  animation: bottotop 0.4s linear;
+}
+
+@media screen and (max-width: 1023px) {
+  .ontop{
+    right: 30px;
+  }
+}
+
+
