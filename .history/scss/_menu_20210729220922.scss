@@ -179,8 +179,7 @@
         width: 750px;
       }
       &-list::after{
-        right: 3%;
-        height: 300px;
+        right: 10%;
       }
 
   }
@@ -204,8 +203,8 @@
     }
     &-list::after{
       height: 310px;
-      top: 62%;
-      right: 0;
+      top: 10%;
+      right: 3%;
     }
     &-bottom{
       max-width: 100%;
@@ -216,7 +215,6 @@
       left: 0;
       top: 0;
     }
-   
   }
   
   
